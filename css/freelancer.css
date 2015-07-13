@@ -482,9 +482,10 @@ footer .footer-below {
     outline: 0;
 }
 
-#menu-modal{
-  font-sze:.5em;
+.menu-bg{
+  background-color:white;
 }
+
 
 .portfolio-modal .modal-content {
     padding: 100px 0;
@@ -495,6 +496,8 @@ footer .footer-below {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+    background-color:#231F20;
+    background:rgba(0,0,0,0.7);
 }
 
 .portfolio-modal .modal-content h2 {
