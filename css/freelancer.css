@@ -237,6 +237,23 @@ section .intro-text{
     width:100%;
 }
 
+#location{
+  color:white;
+  background:url(../img/storefront.jpg) no-repeat;
+  background-size:cover;
+  height:100%;
+  width:100%;
+}
+
+#location .intro-text{
+  padding-left:40px;
+  padding-right:40px;
+}
+
+#location #map-canvas {
+  height:400px;
+}
+
 
 .rslides {
   position: relative;

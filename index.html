@@ -61,10 +61,10 @@
                         <a href="#menu">Menu</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#location">Location</a>
+                        <a href="#contact">Contact</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Contact</a>
+                        <a href="#location">Location</a>
                     </li>
                 </ul>
             </div>
@@ -92,7 +92,7 @@
         </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
+    <!-- About Grid Section -->
     <section id="about">
         <div class="container">
             <div class="row">
@@ -114,13 +114,13 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Menu Section -->
     <section class="success" id="menu" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="intro-text">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>The Menu</h2>
+                    <h2>The<img src="img/menulogo2.png" alt="logo"/>Menu</h2>
                     <hr/></br>
                 </div>
             </div>
@@ -202,6 +202,25 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="intro-text">
+          <div class="row">
+            <div id="map-canvas" class="col-lg-6">
+            </div>
+            <div class="col-lg-6">
+              <h2 class="text-center">Where are we?</h2>
+              <hr/>
+              <p>Proin aliquet, ligula tincidunt pretium tincidunt, mi augue rhoncus sapien, sed suscipit elit metus malesuada tortor.</p>
+              <p>Proin aliquet, ligula tincidunt pretium tincidunt, mi augue rhoncus sapien, sed suscipit elit metus malesuada tortor.</p>
+              <p>Proin aliquet, ligula tincidunt pretium tincidunt, mi augue rhoncus sapien, sed suscipit elit metus malesuada tortor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
@@ -752,6 +771,7 @@
     <script src="js/cbpAnimatedHeader.js"></script>
     <script src="js/responsiveslides.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script>
       $.stellar();
     </script>
@@ -765,6 +785,26 @@
         });
       });
     </script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(-37.375270, 175.668214),
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+        var marker = new google.maps.Marker({
+          position:new google.maps.LatLng(-37.375270, 175.668214),
+          icon:'img/logo3.png'
+        });
+
+marker.setMap(map);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
