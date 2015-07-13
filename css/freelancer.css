@@ -418,7 +418,7 @@ form .row:first-child .floating-label-form-group {
 }
 
 .menu-style{
-  width:100%;
+  width:700px;
   height:900px;
 }
 
@@ -480,6 +480,10 @@ footer .footer-below {
 
 .scroll-top .btn:focus {
     outline: 0;
+}
+
+#menu-modal{
+  font-sze:.5em;
 }
 
 .portfolio-modal .modal-content {
