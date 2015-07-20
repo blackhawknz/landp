@@ -359,6 +359,7 @@ section .intro-text{
 .btn {
   margin-bottom:20px;
   margin-top:20px;
+  background:#FFEB54;
 }
 
 .btn-outline {
