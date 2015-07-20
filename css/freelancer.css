@@ -384,7 +384,7 @@ section .intro-text{
     position: relative;
     margin-bottom: 0;
     padding-bottom: .5em;
-  
+
 }
 
 .floating-label-form-group input,
@@ -499,6 +499,7 @@ footer .footer-below {
     border-radius: 100%;
     font-size: 20px;
     line-height: 28px;
+    background:#231F20;
 }
 
 .scroll-top .btn:focus {
